@@ -1,0 +1,14 @@
+body{
+  background-color: gray;
+}
+
+
+p{
+    color: black;
+    font-family: "Verdana",serif;
+    font-size: 1.2em;
+  }
+h1{
+  font-family: "Verdana",serif;
+  font-size: 1.7em;
+}
