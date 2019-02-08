@@ -1,0 +1,40 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: "header header""section aside""footer footer";
+  grid-gap: 0.5em 0.5em;
+}
+
+header {
+  grid-area: header;
+}
+
+section {
+  grid-area: section;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+#html {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+@media only screen and (max-width: 817px) {
+  body {
+    grid-template-areas: "header header""section section""aside aside""footer footer";
+  }
+
+  #seaPicture {
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+body{
+  background-color: black;
+}
+
+header{
+  background-color: purple;
+}
+section{
+  background-color: lightpink;
+}
+aside{
+  background-color: lightblue;
+}
+footer{
+  background-color: darkblue;
+  text-align: center;
+}
+p,h1,h2{
+  padding: 1%;
+}
