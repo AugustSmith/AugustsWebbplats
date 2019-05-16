@@ -1,0 +1,24 @@
+body{
+  background-color: black;
+}
+
+header{
+  background-color: white;
+}
+section{
+  background-color: white;
+}
+aside, div{
+  background-color: white;
+/*  opacity: 0.8; */
+}
+footer{
+  background-color: lightgrey;
+  text-align: center;
+}
+main{
+  background-color: white;
+}
+p,h1,h2{
+  padding: 1%;
+}
