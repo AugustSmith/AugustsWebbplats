@@ -1,0 +1,195 @@
+/*Grid*/
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.01fr;
+  grid-template-areas: "logo header header header header header""picture picture picture picture picture picture""aside2 picture2 picture2 section section aside1""aside2 picture3 picture3 section2 section2 aside1""footer footer footer footer footer footer";
+  grid-gap: 0.1em 0em;
+}
+iframe{
+   width: 99.7%;
+   height: 600px;
+}
+
+header {
+  grid-area: header;
+}
+
+section {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
+  padding-bottom: 20px;
+}
+
+main {
+  grid-area: logo;
+
+}
+#section2{
+  grid-area: section2;
+}
+
+#aside1 {
+  grid-area: aside1;
+}
+#aside2 {
+  grid-area: aside2;
+}
+#aside3 {
+  grid-area: aside1;
+}
+#aside4 {
+  grid-area: aside2;
+}
+
+
+#picture1 {
+  grid-area: picture;
+}
+#picture2 {
+  grid-area: picture2;
+}
+#picture3 {
+  grid-area: picture3;
+}
+
+
+
+/*Pictures*/
+#Beach{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
+
+}
+#room1{
+  display: block;
+  padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
+
+}
+#room2{
+  display: block;
+  padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
+
+}
+
+#pictureLogo {
+  display: block;
+  margin: auto;
+  width: 80%;
+
+}
+
+/* NAVIGATION */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 90px 40px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: grey;
+  color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* JAVA NAV */
+
+/*media*/
+@media only screen and (max-width: 850px) {
+  body {
+    grid-template-areas:
+    "logo logo logo logo logo logo"
+    "header header header header header header"
+    "picture picture picture picture picture picture"
+    "section section section section section section"
+    "picture2 picture2 picture2 picture2 picture2 picture2"
+    "section2 section2 section2 section2 section2 section2"
+    "picture3 picture3 picture3 picture3 picture3 picture3"
+    "footer footer footer footer footer footer";
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+      grid-gap: 0.1em;
+  }
+
+  #pictureLogo {
+    width: 40%;
+    max-width: 250px;
+  }
+  #room1,#room2{
+    padding: 0px;
+    width: 100%;
+  }
+  main {
+    margin-right: 0em;
+  }
+  iframe{
+     width: 99%;
+  }
+}
+  /*NAVIGATION*/
+  @media screen and (max-width: 850px) {
+    .topnav a{
+      display: none;
+      padding: 40px 40px;
+
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* link */
+a.linker {
+  color: black;
+   font-weight: bold;
+  text-decoration: none;
+}
+
+a.linker:hover{
+  color: black;
+  text-decoration: underline;
+}
