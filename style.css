@@ -22,3 +22,10 @@ main{
 p,h1,h2{
   padding: 1%;
 }
+p{
+  font-family: verdana;
+}
+
+h1,h2{
+  font-family: sans-serif;
+}
